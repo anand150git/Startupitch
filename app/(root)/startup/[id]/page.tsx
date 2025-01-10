@@ -8,6 +8,7 @@ import markdownit from 'markdown-it'
 import { Skeleton } from '@/components/ui/skeleton';
 import View from '@/components/View';
 import StartupCard, { StartupTypeCard } from '@/components/StartupCard';
+import Image from 'next/image';
 
 const md = markdownit()
 
@@ -35,7 +36,7 @@ const Startup = async ({ params }: { params: Promise<{ id: string }> }) => {
       </section>
 
       <section className='section_container'>
-        <img
+        <Image
           src={post.image}
           alt="thumbnail"
           className='w-full h-auto rounded-xl'
