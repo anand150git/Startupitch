@@ -5,7 +5,6 @@ import { BadgePlusIcon, LogOutIcon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
-import Image from 'next/image'
 
 const Navbar = async () => {
   const session = await auth()
@@ -20,7 +19,7 @@ const Navbar = async () => {
     <header className='px-4 py-3 font-work-sans shadow-sm'>
       <nav className='flex justify-between items-center'>
         <Link href='/'>
-          <Image src="/logo.png" alt='logo' height={30} width={144} />
+          <img src="/logo.png" alt='logo' height={30} width={144} />
         </Link>
 
         <div className='flex gap-5 items-center'>
