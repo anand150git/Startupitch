@@ -72,8 +72,8 @@ reusability
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/JavaScript-Mastery-Pro/pitchify.git
-cd pitchify
+git clone https://github.com/anand150git/Startupitch.git
+cd Startupitch
 ```
 
 **Installation**
