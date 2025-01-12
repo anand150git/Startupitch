@@ -3,6 +3,8 @@ import localFont from "next/font/local"
 import "./globals.css";
 import "easymde/dist/easymde.min.css";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const workSans = localFont({
   src: [
@@ -63,6 +65,8 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
       >
         {children}
         <Toaster/>
+        <Analytics/>
+        <SpeedInsights />
       </body>
     </html>
   );
