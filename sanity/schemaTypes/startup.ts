@@ -1,4 +1,3 @@
-import { UserIcon } from "lucide-react";
 import { defineField, defineType } from "sanity";
 
 export const startup = defineType({
@@ -30,7 +29,7 @@ export const startup = defineType({
         defineField({
             name: "description",
             type: "text",
-            validation: Rule => Rule.required().min(50).max(200).error('Category must be between 50 and 200 characters')
+            validation: Rule => Rule.required().min(20).max(200).error('Category must be between 50 and 200 characters')
         }),
         defineField({
             name: "category",
